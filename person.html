@@ -1,0 +1,17 @@
+class person{
+    constructor(name){
+        this.firstName=name
+    }
+    getName(){
+        returnthis.firstName;
+    }
+    get name(){
+        return this.firstName;
+    }
+    set name(newName){
+        this.firstName=newName;
+    }
+}
+let obj=new person("Akshy");
+console.log(obj.getName());
+console.log(obj.name);
