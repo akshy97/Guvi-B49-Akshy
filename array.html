@@ -1,40 +1,25 @@
-<html>
-  <head>
-    <title>XMLHttpRequest Example</title>
-  </head>
-  <body>
-    <script>
-    
-      var xhr = new XMLHttpRequest();
 
-      
-      var method = "GET";
-      var url = "https://restcountries.com/v3.1/all";
-
-    
-      xhr.open(method, url);
-
-      xhr.onload = function () {
-        if (xhr.status === 200) {
-          var details = JSON.parse(xhr.responseText);
-          for (var i = 0; i < details.length; i++) {
-            console.log(ddetails[i].currencies);
-            if (details[i].currencies != "undefined") {
-              Object.keys(details[i].currencies).forEach((key) => {
-                if (key == "USD") {
-                  console.log(key, details[i].currencies[key]);
-                }
-              });
-            }
-          }
-        } else {
-          //Request failed
-          console.log("Request failed", xhr.status);
-        }
-      };
-
-      //send the request
-      xhr.send();
-    </script>
-  </body>
-</html>
+  // Anonymous function 
+   function(array , k){
+                             k = k % a.length;
+                               if(k < 0){
+                                 k += a.length;
+                               }
+   
+                               reverse(a, 0, a.length - k - 1);
+                               reverse(a, a.length - k, a.length - 1);
+                               reverse(a, 0, a.length - 1);
+                             }
+                             
+     // IIFE 
+         (function(array , k){
+                             k = k % a.length;
+                               if(k < 0){
+                                 k += a.length;
+                               }
+   
+                               reverse(a, 0, a.length - k - 1);
+                               reverse(a, a.length - k, a.length - 1);
+                               reverse(a, 0, a.length - 1);
+                             })([1,2,3,4] , 2)
+                             
