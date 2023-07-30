@@ -1,4 +1,36 @@
-{
+
+ {
+  "name": "Akshy V S Geo",
+  "email": "akshygeo457@gmail.com",
+  "phone": "685389509.",
+  "degree": "BE",
+  "location": {
+    "address": "6/28A Therivillai",
+    "postalCode": "629167",
+    "city": "Nagercovil",
+    
+    "region": "Tamilnadu"
+  },
+
+"education": [
+  {
+    "institution": "Bethlahem Institute of Engineering",
+    "area": "Karunkal",
+    "gpa": "7.3",
+    "courses": [
+      "Engineering"
+    ]
+  }
+],
+
+"languages": [
+  {
+    "language": "Tamil,English",
+    "fluency": "Tamil,English"
+  }
+]
+
+}
     "basics": {
       "name": "Akshy V S Geo",
       "email": "akshygeo457@gmail.com",
@@ -30,4 +62,4 @@
       }
     ]
    
-    }}
+    }
